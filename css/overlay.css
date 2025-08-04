@@ -1,0 +1,106 @@
+button {
+    border: none;
+}
+button:active {
+    border: none;
+}
+#fix-ytm-overlay-trigger {
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    z-index: 9999;
+}
+div.flex-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#fix-ytm-overlay-inner-wrapper {
+    flex-direction: row;
+    transform: translateY(30px);
+}
+#fix-ytm-overlay-menu {
+    display: none;
+    width: 250px;
+    height: 300px;
+    border: #ff0033 2px solid;
+    background-color: rgba(2, 2, 2, 0.6);
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    contain: layout;
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    z-index: 9999;
+}
+#fix-ytm-overlay-menu:hover {
+    background-color: rgba(2, 2, 2, 0.7);
+}
+#fix-ytm-overlay-hide {
+    height: 2px;
+    width: 18px;
+    margin: 25px 15px;
+    position: absolute;
+    border: 1px #ffffff solid;
+    right: 0;
+    top: 0;
+}
+#fix-ytm-overlay-fetch-playlist-button {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 0, 51, 0.85);
+    color: #ffffff;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+#fix-ytm-overlay-mode-render-button {
+    padding: 10px 5px;
+    width: 100px;
+    background: none;
+    color: #ffffff;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 2px solid #696969;
+}
+#fix-ytm-overlay-mode-render-button:active {
+    background-color: #696969;
+}
+button.fix-ytm-functionality-item {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    padding: 3px;
+    margin: 7px;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgba(255, 0, 51, 0.3);
+    color: #ffffff;
+    border-radius: 50%;
+    z-index: 9999;
+    font-size: 18px;
+    font-family: monospace;
+}
+button.fix-ytm-functionality-item:hover {
+    background-color: rgba(255, 0, 51, 1);
+    cursor: pointer;
+}
+button.fix-ytm-functionality-item:active {
+    background-color: rgba(200, 0, 40, 1);
+}
+p.fix-ytm-functionality-item {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: monospace;
+    text-decoration: none;
+}

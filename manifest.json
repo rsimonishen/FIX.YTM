@@ -1,0 +1,11 @@
+{
+  "name": "FIXYT_TEST",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "Fix broken features of YouTube Music",
+  "content_scripts": [{
+      "matches": ["https://music.youtube.com/*"],
+      "css": ["css/overlay.css"],
+      "js": ["init/init.js", "main.js", "assets/utils.js", "assets/functions.js", "init/page_init.js", "overlay.js"]
+    }]
+}
